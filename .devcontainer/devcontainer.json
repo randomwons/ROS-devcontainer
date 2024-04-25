@@ -1,0 +1,25 @@
+//devcontainer.json
+{
+    "name": "ROS2",
+    "image": "cjinone/humble_usb_cam:realsense2",
+    "runArgs": [
+        "--device=/dev"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": [
+          "ms-iot.vscode-ros",
+          "ms-vscode.cpptools",
+          "ms-vscode.cpptools-extension-pack",
+          "twxs.cmake",
+          "VisualStudioExptTeam.vscodeintellicode",
+          "VisualStudioExptTeam.intellicode-api-usage-examples",
+          "jeff-hykin.better-cpp-syntax"
+        ]
+      }
+    }
+  }
